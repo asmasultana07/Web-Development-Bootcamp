@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="HTML, Form, Input, Web design" />
+    <meta name="author" content="Asma Sultana" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="image/icons8-registration-50.png"
+      type="image/x-icon"
+    />
+    <title>Student Registraton Form</title>
+  </head>
+  <body>
+    <h1>Please Fill The Form</h1>
+    <form action="">
+      <fieldset>
+        <legend >Student Registration Form</legend>
+        
+        <br />
+        <div class="input">
+          <label for="">Full Name :</label>
+          <input
+            type="text"
+            name="name"
+            id="input-text"
+            size="50"
+            minlength="6"
+            required
+          />
+        </div>
+        <br />
+        <div class="input">
+          <label for="">Parent/Guardian's Name :</label>
+          <input
+            type="text"
+            name="name"
+            id="input-name"
+            size="50"
+            minlength="6"
+            required
+          />
+        </div>
+        <br />
+        <div class="input">
+          <label for="">Email :</label>
+          <input
+            type="email"
+            name="email"
+            id="input-email"
+            size="50"
+            required
+          />
+        </div>
+        <br />
+
+        <div class="input">
+          <label for="">Phone Number :</label>
+          <input
+            type="number"
+            name="number"
+            id="input-number"
+            size="50"
+            required
+          />
+        </div>
+        <br />
+
+        <div class="input">
+          <label for="">Date of Birth :</label>
+          <input
+            type="number"
+            name="day"
+            id="input-date"
+            placeholder="Day"
+            min="1"
+            max="31"
+            required
+          />
+          <select name="month" required>
+            <option value="month">Month</option>
+            <option value="Jan">Jan</option>
+            <option value="Feb">Feb</option>
+            <option value="Mar">Mar</option>
+            <option value="Apr">Apr</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="Aug">Aug</option>
+            <option value="Sep">Sep</option>
+            <option value="Oct">Oct</option>
+            <option value="Nov">Nov</option>
+            <option value="Dec">Dec</option>
+          </select>
+          <input
+            type="number"
+            name="year"
+            id="input-date"
+            size="5"
+            maxlength="5"
+            placeholder="Year"
+            min="1991"
+            max="2005"
+          />
+        </div>
+        <br />
+        <div class="input">
+          <label for="">Enter Your Gender : </label>
+          <input type="radio" name="gender" id="" value="Male" /> Male
+          <input type="radio" name="gender" id="" value="Female" /> Female
+        </div>
+        <br />
+
+        <div class="input">
+          <label for="">Address :</label>
+          <textarea cols="48" rows="5" required></textarea>
+        </div>
+        <br />
+        <div class="input">
+          <label for="">City :</label>
+          <input
+            type="text"
+            name="address"
+            id="input-text"
+            size="50"
+            minlength="6"
+            required
+          />
+        </div>
+
+        <br />
+        <div class="input">
+          <label>Upload Your Photo : </label>
+          <input type="file" name="photo" id="input-photo" required />
+        </div>
+        <br />
+        <div class="input">
+          <label>Enter Password : </label>
+          <input
+            type="password"
+            name="password"
+            id="input-password"
+            minlength="6"
+            required
+          />
+        </div>
+        <br />
+
+        <div class="input">
+          <label for="">Department : </label>
+          <input list="department" name="department"/>
+          <datalist id="department">
+            <option>None</option>
+            <option>CSE</option>
+            <option>EEE</option>
+            <option>Civil</option>
+            <option>IT</option>
+            <option>Math</option>
+          </datalist>
+        </div>
+        <br />
+        <br />
+        <div>
+          <input type="submit" value="Register" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
