@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="before , after" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+    h1::before {
+            /* content: url(image/image.png);*/
+            content: "Hi! " ;
+            background-color: red;
+            display:block; 
+    }
+      h1::after {
+          content: " Good Bye.";
+          background-color: salmon;
+          color:blue;
+          display: block;
+      }
+
+      span {
+        color: cadetblue;
+        background-color: bisque;
+        font-size: 20px;
+        border: 1px solid greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>I am Heading</h1>
+    <p>I am paragraph</p>
+    <span> highlight</span>
+  </body>
+</html>
